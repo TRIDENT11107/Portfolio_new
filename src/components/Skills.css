@@ -1,0 +1,271 @@
+.skills {
+  background: transparent;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.skill-category {
+  position: relative;
+  overflow: hidden;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skill-item {
+  position: relative;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.skill-name {
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.skill-level {
+  font-weight: 600;
+  color: #a0a0a0;
+  font-size: 0.875rem;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #ffffff 0%, #a0a0a0 100%);
+  border-radius: 3px;
+  transition: width 1.5s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.certifications-section {
+  margin-bottom: 4rem;
+}
+
+.certifications-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.certification-item {
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, rgba(30, 30, 30, 0.8) 0%, rgba(50, 50, 50, 0.4) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.certification-item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.cert-badge {
+  display: inline-block;
+  background: linear-gradient(90deg, #14b8a6 0%, #0ea5a1 100%);
+  color: #ffffff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cert-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.cert-provider {
+  font-size: 0.875rem;
+  color: #a0a0a0;
+  margin-bottom: 0.25rem;
+}
+
+.cert-year {
+  font-size: 0.75rem;
+  color: #a0a0a0;
+}
+
+/* compact view certificate button */
+.view-certificate-btn {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: linear-gradient(90deg, #14b8a6 0%, #0ea5a1 100%);
+  color: #fff;
+  padding: 0.16rem 0.35rem; /* even tighter */
+  border-radius: 0.35rem;
+  font-weight: 700;
+  font-size: 0.66rem; /* a bit smaller */
+  text-decoration: none;
+  box-shadow: 0 1px 6px rgba(14,165,161,0.05);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.view-certificate-btn:hover { transform: translateY(-1px); }
+
+/* disabled style for when no link is present */
+.view-certificate-btn.disabled,
+.view-certificate-btn[aria-disabled='true'] {
+  background: rgba(255,255,255,0.04);
+  color: rgba(255,255,255,0.5);
+  cursor: default;
+  box-shadow: none;
+}
+
+/* green pending variant for Oracle */
+.view-certificate-btn.pending {
+  background: linear-gradient(90deg, #14b8a6 0%, #0ea5a1 100%);
+  color: #fff;
+  box-shadow: 0 1px 6px rgba(14,165,161,0.05);
+}
+
+.currently-working {
+  text-align: center;
+}
+
+.currently-working-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.currently-working-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.working-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 2rem 1.5rem;
+  background: linear-gradient(135deg, rgba(30, 30, 30, 0.8) 0%, rgba(50, 50, 50, 0.4) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.working-item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.working-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  background: rgba(20, 184, 166, 0.06);
+  box-shadow: inset 0 0 0 1px rgba(20,184,166,0.06);
+}
+.working-icon svg {
+  width: 36px;
+  height: 36px;
+  display: block;
+}
+
+/* Grade icon used in Education cards */
+.grade-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(20, 184, 166, 0.04);
+  box-shadow: inset 0 0 0 1px rgba(20,184,166,0.04);
+  margin-right: 0.5rem;
+}
+.grade-icon svg { width: 28px; height: 28px; display: block; }
+
+.grade-icon { color: #14b8a6; }
+
+.working-category {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.working-tools {
+  font-size: 0.875rem;
+  color: #a0a0a0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .currently-working-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .category-title {
+    font-size: 1.25rem;
+  }
+
+  .skills-list {
+    gap: 1rem;
+  }
+
+  .certifications-title,
+  .currently-working-title {
+    font-size: 1.25rem;
+  }
+} 

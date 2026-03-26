@@ -1,0 +1,136 @@
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0c0c0c 0%, #1a1a1a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 9999;
+  font-family: 'Courier New', monospace;
+}
+
+.loader-content {
+  text-align: center;
+  color: #14b8a6;
+  padding: 28px;
+  max-width: 500px;
+  width: 100%;
+  transform: translateY(-6vh);
+}
+
+.terminal-lines {
+  margin-bottom: 36px;
+  text-align: left;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.terminal-line {
+  font-size: 14px;
+  font-weight: 500;
+  color: #14b8a6;
+  text-shadow: 0 0 10px rgba(20, 184, 166, 0.5);
+  letter-spacing: 0.7px;
+  animation: fadeInLine 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+.terminal-line:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.terminal-line:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.terminal-line:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+.terminal-line:nth-child(4) {
+  animation-delay: 1.2s;
+}
+
+.terminal-line:nth-child(5) {
+  animation-delay: 1.6s;
+}
+
+@keyframes fadeInLine {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.arrow {
+  color: #14b8a6;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.progress-section {
+  margin-top: 24px;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #14b8a6;
+  text-transform: uppercase;
+}
+
+.label-text {
+  color: #14b8a6;
+}
+
+.percentage {
+  color: #14b8a6;
+  font-size: 14px;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 6px;
+  background-color: rgba(20, 184, 166, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid rgba(20, 184, 166, 0.3);
+}
+
+.progress-bar {
+  height: 100%;
+  background: #14b8a6;
+  border-radius: 3px;
+  box-shadow: 0 0 15px rgba(20, 184, 166, 0.8), 0 0 30px rgba(20, 184, 166, 0.4);
+  transition: width 0.3s ease-out;
+}
+
+@media (max-width: 768px) {
+  .loader-content {
+    padding: 20px;
+    transform: translateY(-3vh);
+  }
+
+  .terminal-line {
+    font-size: 13px;
+  }
+
+  .progress-label {
+    font-size: 11px;
+  }
+}

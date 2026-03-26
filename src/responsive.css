@@ -1,0 +1,41 @@
+/* responsive helper variables and utilities (desktop-first) */
+
+:root {
+  --section-vertical: 8rem;
+  --section-h-padding: 2rem;
+  --text-scale: 1;
+  --card-padding: 2.5rem;
+  --btn-min-height: 44px;
+}
+
+/* Apply variables where desired (desktop-first defaults above). */
+.section { padding: var(--section-vertical) 0; }
+.container { padding: 0 var(--section-h-padding); }
+.section-title { transform: scale(var(--text-scale)); transform-origin: center; }
+.card { padding: var(--card-padding); }
+
+/* Button touch targets */
+.btn { min-height: var(--btn-min-height); }
+
+/* Prevent horizontal overflow */
+body, .container { overflow-x: hidden; }
+
+/* Flexible project image */
+.project-image { height: auto; aspect-ratio: 16/9; max-height: 260px; }
+
+/* Small screen tweaks example (additional override, optional) */
+@media (max-width: 420px) {
+  .section-title { font-size: clamp(1.4rem, 5vw, 2rem); }
+  .card { border-radius: 12px; }
+}
+
+/* Mobile-specific snippet to be appended to the end of main scripts as requested.
+   This small block defines some convenience classes/variables that developers can
+   toggle or extend. It's intentionally compact and non-invasive. */
+
+/* --- MOBILE OVERRIDE SNIPPET (append-only) --- */
+/*
+body.is-mobile .section { padding: 2.5rem 0; }
+body.is-mobile .section-title { font-size: 1.6rem; }
+body.is-mobile .container { padding: 0 0.75rem; }
+*/
