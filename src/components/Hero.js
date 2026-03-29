@@ -1,9 +1,10 @@
 import './Hero.css';
 
 const Hero = () => {
+  const resumeFileName = 'Sarthak_Rastogi_Resume.pdf';
   const resumeHref = process.env.PUBLIC_URL
-    ? `${process.env.PUBLIC_URL}/sarthak_resume_temp.pdf`
-    : 'sarthak_resume_temp.pdf';
+    ? `${process.env.PUBLIC_URL}/${resumeFileName}`
+    : resumeFileName;
 
   // Generate simple particles - bright white dots and bright comets
   const generateParticles = () => {
@@ -97,7 +98,7 @@ const Hero = () => {
 
           <div className="hero-buttons">
             <a href="#about" className="btn btn-primary">Explore My Journey</a>
-            <a href={resumeHref} download="Sarthak_Rastogi_resume" className="px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-black transition-all duration-300 hover:scale-105">Download Resume</a>
+            <a href={resumeHref} download="Sarthak_Rastogi_Resume.pdf" className="px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-black transition-all duration-300 hover:scale-105">Download Resume</a>
           </div>
         </div>
       </div>

@@ -46,7 +46,7 @@ const Projects = () => {
       description: "NLP pipeline for classifying streaming text data based on credibility with optimized accuracy-latency-false positive balance.",
       brief: "Created real-time NLP pipelines to classify streaming text data based on credibility. Tuned model thresholds to balance accuracy, latency, and false positives for deployment in production environments with high-volume data streams.",
       technologies: ["Python", "NLP", "Machine Learning", "Real-Time Processing", "Data Streaming"],
-      image: "https://images.unsplash.com/photo-1555808684-dfa9414bcaf9?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      image: "/fake%20news.png",
       category: "AI/ML",
       link: "#",
       github: "#",

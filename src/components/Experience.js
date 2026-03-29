@@ -42,9 +42,10 @@ const GraduationCapIcon = ({ className = '' }) => (
 );
 
 const Experience = () => {
+  const resumeFileName = 'Sarthak_Rastogi_Resume.pdf';
   const resumeHref = process.env.PUBLIC_URL
-    ? `${process.env.PUBLIC_URL}/sarthak_resume_temp.pdf`
-    : 'sarthak_resume_temp.pdf';
+    ? `${process.env.PUBLIC_URL}/${resumeFileName}`
+    : resumeFileName;
 
   const experiences = [
     {
@@ -267,7 +268,7 @@ const Experience = () => {
                   <span className="sr-only">LinkedIn</span>
                 </a>
 
-                <a href={resumeHref} className="btn btn-primary" download="Sarthak_Rastogi_resume">
+                <a href={resumeHref} className="btn btn-primary" download="Sarthak_Rastogi_Resume.pdf">
                   View Resume
                 </a>
               </div>
