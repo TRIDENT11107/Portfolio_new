@@ -10,15 +10,15 @@ const About = () => {
           <div className="about-text">
             <h3 className="about-subtitle">From Code to Creativity - Building the Future</h3>
             <p className="about-description">
-              I'm Sarthak, a Computer Science undergraduate at SRM Institute of Science & Technology specializing in AI/ML and full-stack development. I maintain a 9.0 CGPA while delivering production-oriented projects during internships and coursework.
+              I'm Sarthak, a Computer Science undergraduate at SRM Institute of Science & Technology specializing in AI/ML, data analytics, and full-stack development. I maintain an 8.9 CGPA while building production-oriented systems across internships, research-driven work, and personal projects.
             </p>
 
             <p className="about-description">
-              My work emphasizes practical machine learning and scalable web systems: designing efficient computer-vision pipelines, building robust APIs, and shipping features that improve user experience. I follow reproducible workflows, clean engineering practices, and collaborative development.
+              My work focuses on scalable data pipelines, AI-driven applications, and backend systems that turn complex data into actionable insights. I enjoy building NLP and computer vision workflows, analytics dashboards, and end-to-end products that balance strong engineering with practical business impact.
             </p>
 
             <p className="about-description">
-              Beyond coding, I engage with technical communities through design and mentorship, and I enjoy interdisciplinary projects that combine design thinking with engineering to solve real problems.
+              Beyond coding, I stay involved in technical communities through design and creative work, and I enjoy interdisciplinary projects where engineering, usability, and visual communication come together to solve real problems.
             </p>
           </div>
 
@@ -56,30 +56,34 @@ const About = () => {
           <div className="expertise-item">
             <h4 className="expertise-title">AI/ML Expertise</h4>
             <p className="expertise-description">
-              Building production ML systems for computer vision and NLP - image retrieval,
-              object detection, and document data extraction - optimized for low-latency
-              deployment (TensorFlow, PyTorch, OpenCV, FAISS).
+              Building applied AI systems across NLP, computer vision, deep learning, RAG,
+              and LLM fine-tuning - from OCR-based document intelligence and anomaly
+              detection to real-time inference pipelines using TensorFlow, PyTorch, OpenCV,
+              and FAISS.
             </p>
           </div>
           <div className="expertise-item">
             <h4 className="expertise-title">Full-Stack Development</h4>
             <p className="expertise-description">
-              Modern web applications using React, Node.js, and JavaScript with focus on user
-              experience and scalable architecture.
+              End-to-end web applications with React, Node.js, APIs, authentication, and
+              database integration, along with deployment-minded workflows using Docker,
+              Kubernetes, PostgreSQL, and MongoDB for scalable systems.
             </p>
           </div>
           <div className="expertise-item">
             <h4 className="expertise-title">Data Structures & Algorithms</h4>
             <p className="expertise-description">
-              Strong foundation in DSA with problem-solving skills, contributing to efficient
-              and optimized code solutions.
+              Strong foundation in DSA, OOP, DBMS, and problem solving, helping me design
+              efficient code, optimize system behavior, and approach engineering challenges
+              with a structured mindset.
             </p>
           </div>
           <div className="expertise-item">
             <h4 className="expertise-title">Creative Design</h4>
             <p className="expertise-description">
               Graphic design and multimedia production using Figma, Photoshop, and Premiere
-              Pro for impactful visual communication.
+              Pro to create impactful visuals for communities, events, and digital products
+              with a strong focus on communication and brand presence.
             </p>
           </div>
         </div>

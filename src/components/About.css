@@ -127,12 +127,6 @@
   background: linear-gradient(135deg, rgba(30, 30, 30, 0.8) 0%, rgba(50, 50, 50, 0.4) 100%);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 1rem;
-  transition: all 0.3s ease;
-}
-
-.expertise-item:hover {
-  transform: translateY(-5px);
-  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .expertise-title {
