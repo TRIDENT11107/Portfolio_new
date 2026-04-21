@@ -2,9 +2,10 @@ import './Hero.css';
 
 const Hero = () => {
   const resumeFileName = 'Sarthak_Rastogi_Resume.pdf';
+  const resumeVersion = '20260421';
   const resumeHref = process.env.PUBLIC_URL
-    ? `${process.env.PUBLIC_URL}/${resumeFileName}`
-    : resumeFileName;
+    ? `${process.env.PUBLIC_URL}/${resumeFileName}?v=${resumeVersion}`
+    : `${resumeFileName}?v=${resumeVersion}`;
 
   // Generate simple particles - bright white dots and bright comets
   const generateParticles = () => {

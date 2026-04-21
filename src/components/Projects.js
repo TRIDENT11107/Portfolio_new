@@ -14,7 +14,7 @@ const Projects = () => {
       technologies: ["Python", "AI/ML", "NLP", "OCR", "Legal Tech"],
       image: "/term_sheet-ai.jpg",
       category: "AI/ML",
-      link: "#",
+      link: "https://term-sheet-ai.vercel.app/",
       github: "https://github.com/TRIDENT11107/TermSheet-AI",
       features: [
         "OCR-based document extraction",
@@ -238,7 +238,7 @@ const Projects = () => {
                   <a href={selectedProject.github} className="modal-btn modal-btn-primary" target="_blank" rel="noopener noreferrer">
                     View Code
                   </a>
-                  <a href={selectedProject.link} className="modal-btn modal-btn-secondary">
+                  <a href={selectedProject.link} className="modal-btn modal-btn-secondary" target="_blank" rel="noopener noreferrer">
                     Live Demo
                   </a>
                 </div>

@@ -43,9 +43,10 @@ const GraduationCapIcon = ({ className = '' }) => (
 
 const Experience = () => {
   const resumeFileName = 'Sarthak_Rastogi_Resume.pdf';
+  const resumeVersion = '20260421';
   const resumeHref = process.env.PUBLIC_URL
-    ? `${process.env.PUBLIC_URL}/${resumeFileName}`
-    : resumeFileName;
+    ? `${process.env.PUBLIC_URL}/${resumeFileName}?v=${resumeVersion}`
+    : `${resumeFileName}?v=${resumeVersion}`;
 
   const experiences = [
     {
@@ -131,7 +132,7 @@ const Experience = () => {
       institution: "Delhi Public School Ghaziabad",
       location: "Ghaziabad",
       period: "2023",
-  grade: "75%",
+      grade: "78%",
       status: "Completed"
     },
     {

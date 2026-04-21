@@ -98,8 +98,8 @@ const Skills = () => {
       <div className="container">
         <h2 className="section-title">Technical Arsenal</h2>
         <p className="section-subtitle">
-          A diverse toolkit spanning AI/ML, full-stack development, competitive 
-          programming, and creative design - built through hands-on projects and real-world 
+          A diverse toolkit spanning AI/ML, full-stack development, competitive
+          programming, and creative design - built through hands-on projects and real-world
           applications.
         </p>
 
@@ -115,8 +115,8 @@ const Skills = () => {
                       <span className="skill-level">{skill.level}%</span>
                     </div>
                     <div className="skill-bar">
-                      <div 
-                        className="skill-progress" 
+                      <div
+                        className="skill-progress"
                         style={{ width: `${skill.level}%` }}
                       ></div>
                     </div>
@@ -146,7 +146,6 @@ const Skills = () => {
                     View Certificate
                   </a>
                 ) : cert.provider && cert.provider.toLowerCase().includes('oracle') ? (
-                  // show green pending button for Oracle until link is provided
                   <span className="view-certificate-btn pending" aria-disabled="true" title="Link coming soon">View Certificate</span>
                 ) : (
                   <span className="view-certificate-btn disabled" aria-disabled="true">View Certificate</span>
@@ -201,4 +200,4 @@ const Skills = () => {
   );
 };
 
-export default Skills; 
+export default Skills;
